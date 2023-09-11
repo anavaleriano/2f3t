@@ -1,3 +1,1 @@
-function mensagem(msg){
-alert("Olá " + msg);
-}
+mensagem = (msg) => alert(msg)
