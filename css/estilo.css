@@ -17,10 +17,11 @@ body{
     padding: 2px;
     background-color: blanchedalmond;
     color: magenta;
-    text-align: center;
+    text-align: right;
 }
 button {
     width: 40px;
     height: 40px;
 }
-btn_igual
+btn_igual {
+    
