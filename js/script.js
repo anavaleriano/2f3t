@@ -8,6 +8,16 @@ let a = "";
 let b = "";
 let valor = "";
 let temPonto = false;
+let desligada = true
+function onoff () {
+    if (desligada){
+        escrever_display ("");
+        desligada = false;
+    }else{
+        zerar ();
+        desligada = true
+    }
+}
 //mensagem (soma(10, soma(8,2)));
 //mensagem (soma(2, div(2,2)));
 //mensagem (soma(div(80,2), mult (5,3)) );
@@ -35,12 +45,14 @@ function digitando(tecla){
 }
 let executa = "";
 function operacao(op){
+    if(desligada) return;
     executa = op;
     a = valor;
     valor = "";
     temPonto = false;
 }
 function calcula(){
+    if(desligada) return;
     if(executa != ""){
         b=valor;
         if(executa == "mult") escrever_display(mult(a,b));
