@@ -1,4 +1,4 @@
-let lista = [];
+let lista = ["Ana","Larissa", "Karol", "Beatriz"];
 const atualiza_lista = () =>{
     let mostrar = "Lista Vazia";
     console.log(lista)
@@ -43,7 +43,7 @@ const inserir_ultimo = () => {
 const inserir_primeiro= () => {
     let nome = pegar_nome();
     if( nome != ""){
-        lista.unshift("ana");
+        lista.unshift(nome);
         atualiza_lista();
     } 
 }
@@ -67,20 +67,20 @@ const limpar_lista = () => {
     }
 }
 const deletar_nome = () => {
-    if(lista.length = 1){ 
-        lista.pop(); 
+    if(lista.length = 0){ 
+        list.pop(); 
         atualiza_lista();
     }
 }
-const odernar_az = () => {
-    if(lista.length = 1){ 
+const ordenar_az = () => {
+    if(lista.length > 0){ 
         lista.sort(); 
         atualiza_lista();
     }
 }
 const ordenar_za = () => {
-    if(lista.length = 1){ 
-        lista.sort(); 
+    if(lista.length > 0){ 
+        lista.reverse(); 
         atualiza_lista();
     }
 }
