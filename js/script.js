@@ -4,8 +4,15 @@ sub = (a,b) => a - b;
 mult = (a,b) => a * b;
 div = (a,b) => a / b;
 raiz = x => Math.sqrt(x);
+
 let a = "";
 let b = "";
+
+let c = "";
+let sa = "+";
+let sb = "+";
+let sc = "+";
+
 let valor = "";
 let temPonto = false;
 let desligada = true
@@ -64,4 +71,8 @@ function calcula(){
         valor = "";
         temPonto = false;
     }
+}
+
+const set_sinal_a = ()=>{
+    
 }
